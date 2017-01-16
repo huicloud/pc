@@ -20,8 +20,10 @@
 
 ## 发布部署
 部署时需要用到的相关文件均已放在`Deployment`文件夹中。
+
 1) `dzhyun.ini`。相关功能的配置说明  
-    > [DzhYun]  
+```ini
+[DzhYun]  
 yuntype=1 //1是alpha，2是beta      
 service=10.15.208.66 //服务器地址    
 isNoCompress=1 //0请求数据是压缩数据，1数据未压缩  
@@ -35,6 +37,7 @@ isOutputLogToFile=1 //是否输出日志到文件
 logOutputLevel=2 //0-4 (debug,warning,critical,fatal,info)日志级别  
 [DzhClient]     
 isSoftwareOpenGL=0 //浏览器兼容配置，默认为0，有问题调成1
+```
 
 2) `PDFViewer `放的是[mozilla/pdf.js](https://github.com/mozilla/pdf.js)这个PDF预览组件，需要和最终生成的QDzh3.exe放在相同目录中（Mac版，则需要放在`QDZH3.app/Contents/Resources`中）。
 3) `libEGL.dll`、`libGLESV2.dll`、`libGLESV2.dll`这三个dll使用的是Qt5.6中带的库，5.7的版本会是程序在运行时有明细的黑屏情况。
