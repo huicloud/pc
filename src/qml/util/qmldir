@@ -1,0 +1,5 @@
+singleton BlockUtil       0.1 BlockUtil.qml
+singleton StockUtil       0.1 StockUtil.qml
+singleton PortfolioUtil   0.1 PortfolioUtil.qml
+singleton HistoryUtil     0.1 HistoryUtil.qml
+singleton UBAUtil         0.1 UBAUtil.qml

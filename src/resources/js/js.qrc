@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/dzh/js">
+        <file>Chart.js</file>
+        <file>Chart.ts</file>
+        <file>Global.js</file>
+        <file>venders/moment-with-locales.min.js</file>
+        <file>DateUtil.js</file>
+        <file>Util.js</file>
+        <file>venders/lodash.js</file>
+        <file>venders/zlib.min.js</file>
+        <file>venders/encoding-indexes.js</file>
+        <file>venders/encoding.js</file>
+        <file>modifyBlockModel.js</file>
+        <file>threadHandler.js</file>
+        <file>TableWorker.js</file>
+        <file>venders/bezier-easing.js</file>
+    </qresource>
+</RCC>

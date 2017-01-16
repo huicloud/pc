@@ -1,0 +1,4 @@
+singleton ThemeManager          0.1 ThemeManager.qml
+singleton GlobalSetting         0.1 GlobalSetting.qml
+singleton ApplicationContext    0.1 ApplicationContext.qml
+singleton TradeSetting          0.1 TradeSetting.qml

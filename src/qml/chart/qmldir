@@ -1,0 +1,2 @@
+singleton ChartLocalStorage       0.1 ChartLocalStorage.qml
+singleton ChartComponentUtil      0.1 ChartComponentUtil.qml

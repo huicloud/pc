@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/dzh">
+        <file>Window.qml</file>
+    </qresource>
+</RCC>

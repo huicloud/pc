@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>NSPrincipalClass</key>
+        <string>NSApplication</string>
+        <key>CFBundleIconFile</key>
+        <string>dzh.icns</string>
+        <key>CFBundlePackageType</key>
+        <string>APPL</string>
+        <key>CFBundleGetInfoString</key>
+        <string>Created by Qt/QMake</string>
+        <key>CFBundleSignature</key>
+        <string>????</string>
+        <key>CFBundleExecutable</key>
+        <string>QDZH3</string>
+        <key>CFBundleIdentifier</key>
+        <string>cn.com.gw.QDZH3</string>
+        <key>CFBundleAllowMixedLocalizations</key>
+        <true/>
+        <key>CFBundleName</key>
+        <string>大智慧舵手版</string>
+        <key>CFBundleDisplayName</key>
+        <string>大智慧舵手版</string>
+        <key>NSHighResolutionCapable</key>
+        <true/>
+        <key>LSApplicationCategoryType</key>
+        <string>public.app-category.finance</string>
+        <key>CFBundleDevelopmentRegion</key>
+        <string>zh_CN</string>
+        <key>LSMinimumSystemVersion</key>
+        <string>10.9</string>
+        <key>NSHumanReadableShortName</key>
+        <string>大智慧舵手版</string>
+        <key>CFBundleVersion</key>
+        <string>1.2</string>
+        <key>CFBundleShortVersionString</key>
+        <string>1.2.0</string>
+</dict>
+</plist>

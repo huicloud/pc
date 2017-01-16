@@ -1,0 +1,3 @@
+singleton DataChannel       0.1 DataChannel.qml
+DataProvider                0.1 DataProvider.qml
+singleton UserService       0.1 UserService.qml
