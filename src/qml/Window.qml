@@ -235,8 +235,10 @@ MainWindow {
 
     function postLoad() {
         //主窗口最大化加载资源后再隐藏，减少因窗口变化引起的不必要的计算
-        mainWindow.showMaximized();
-        mainWindow.hide();
+        if (!mainWindow.visible){
+            mainWindow.showMaximized();
+            mainWindow.hide();
+        }
         // TODO 登录成功后用户相关加载, 加载过程中需要判断登录框状态，如果不是加载中状态则停止加载（登录框中的取消登录功能）
         // TODO 连接服务器
         DataChannel.openChannel();
