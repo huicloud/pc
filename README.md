@@ -21,7 +21,7 @@
 ## 发布部署
 部署时需要用到的相关文件均已放在`Deployment`文件夹中。
 
-1) `dzhyun.ini`。相关功能的配置说明  
+- `dzhyun.ini`。相关功能的配置说明  
 ```ini
 [DzhYun]  
 yuntype=1 //1是alpha，2是beta      
@@ -39,9 +39,9 @@ logOutputLevel=2 //0-4 (debug,warning,critical,fatal,info)日志级别
 isSoftwareOpenGL=0 //浏览器兼容配置，默认为0，有问题调成1
 ```
 
-2) `PDFViewer `放的是[mozilla/pdf.js](https://github.com/mozilla/pdf.js)这个PDF预览组件，需要和最终生成的QDzh3.exe放在相同目录中（Mac版，则需要放在`QDZH3.app/Contents/Resources`中）。
-3) `libEGL.dll`、`libGLESV2.dll`、`libGLESV2.dll`这三个dll使用的是Qt5.6中带的库，5.7的版本会是程序在运行时有明细的黑屏情况。
-4) `msvcp120.dll`、`msvcp120.dll`为Windows系统中所需的VC++的运行库。   
+- `PDFViewer `放的是[mozilla/pdf.js](https://github.com/mozilla/pdf.js)这个PDF预览组件，需要和最终生成的QDzh3.exe放在相同目录中（Mac版，则需要放在`QDZH3.app/Contents/Resources`中）。
+- `libEGL.dll`、`libGLESV2.dll`、`libGLESV2.dll`这三个dll使用的是Qt5.6中带的库，5.7的版本会是程序在运行时有明细的黑屏情况。
+- `msvcp120.dll`、`msvcp120.dll`为Windows系统中所需的VC++的运行库。   
 
 由于QtCreator在Windows中的Debug速度很慢，基本都在Release中进行开发，故将在Windows中部署单独使用脚本处理:   
 > `C:\Qt\Qt5.7.0\5.7\msvc2013\bin\windeployqt.exe -qmldir C:\Qt\Qt5.7.0\5.7\msvc2013\qml  QDzh3.exe`  
