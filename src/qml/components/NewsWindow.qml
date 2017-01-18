@@ -235,7 +235,7 @@ FrameLessWindow {
          'a:hover{ text-decoration:none;}' +
          'a:active {star:expression(this.onFocus=this.blur()); outline-style: none;}' +
          '.container{width: 100%;background: #fff}' +
-         '.main{min-width: 600px; margin:0 auto;padding-top: 18px;overflow: hidden;}' +
+         '.main{min-width: 600px; margin:0 auto;padding-top: 18px;}' +
          'article h2{line-height: 45px;font-size: 18px;text-align: center;color: #000}' +
          'article .info{color: #818181;font-size: 14px;height: 30px;line-height: 30px;width: 90%;margin:0 auto;text-align: center;margin-bottom: 10px;}' +
          'article .info time{float: left;width: 200px;text-align: left;}' +

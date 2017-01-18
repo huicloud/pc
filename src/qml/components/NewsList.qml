@@ -100,18 +100,7 @@ ContextComponent {
                         }
                         Text {
                             Layout.alignment: Qt.AlignRight
-                            text: {
-                                var date = DateUtil.moment(modelData.otime, 'YYYYMMDDHHmmss');
-
-                                if (root.timeFormat) {
-                                    return date.format(root.timeFormat);
-                                } else if (moment().diff(date, 'days') === 0) {
-                                    // today
-                                    return date.format('HH:mm');
-                                } else {
-                                    return date.format('MM-DD');
-                                }
-                            }
+                            text: formateItemTime(modelData.otime, root.timeFormat)
                         }
                     }
                 }
@@ -159,19 +148,7 @@ ContextComponent {
                         }
                         Text {
                             Layout.alignment: Qt.AlignRight
-                            text: {
-                                var date = DateUtil.moment(modelData.otime, 'YYYYMMDDHHmmss');
-
-                                if (root.timeFormat) {
-
-                                    return date.format(root.timeFormat);
-                                } else if (moment().diff(date, 'days') === 0) {
-                                    // today
-                                    return date.format('HH:mm');
-                                } else {
-                                    return date.format('MM-DD');
-                                }
-                            }
+                            text: formateItemTime(modelData.otime, root.timeFormat)
                         }
                     }
                 }
@@ -249,6 +226,21 @@ ContextComponent {
 
     function adapt(nextData) {
         return nextData;
+    }
+
+    function formateItemTime(time, format){
+        var date = DateUtil.moment(time, 'YYYYMMDDHHmmss');
+
+        var now = moment().startOf('day');
+        var dateDay = DateUtil.moment(time, 'YYYYMMDD');
+
+        if (format) {
+            return date.format(format);
+        } else if (now.diff(dateDay, 'days') === 0) {
+            return date.format('HH:mm');
+        } else {
+            return date.format('MM-DD');
+        }
     }
 
     //大盘资讯数据源
