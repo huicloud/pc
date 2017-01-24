@@ -125,9 +125,8 @@ Rectangle {
 
         //不可见数量
         __unVisibleColumnCount  = tableViewHolder.table.columnCount - visibleColumnCount
-        console.log('__unVisibleColumnCount', __unVisibleColumnCount)
-        if (__unVisibleColumnCount > 0){
-            sliderWidth = scrollbar.width / __unVisibleColumnCount
+        if (__unVisibleColumnCount >= 0){
+            sliderWidth = scrollbar.width * (visibleColumnCount / tableViewHolder.table.columnCount)
         } else {
             sliderWidth = scrollbar.width
         }

@@ -133,13 +133,15 @@ Rectangle {
     }
 
     function calcSliderHeiht(){
-        var sliderHeight = 0
-        if (tableViewHolder.rowCount > tableViewHolder.visibleRowCount){
-            sliderHeight = scrollbar.height / (tableViewHolder.rowCount - tableViewHolder.visibleRowCount)
-        } else {
-            sliderHeight = scrollbar.height
+        var sliderHeight = 0;
+        if(tableViewHolder.rowCount === 0){
+            sliderHeight = 0; //当无数据可以显示时，按默认高度处理
+        } else if (tableViewHolder.rowCount > tableViewHolder.visibleRowCount){
+            sliderHeight = scrollbar.height * (tableViewHolder.visibleRowCount / tableViewHolder.rowCount)
+        } else{
+            sliderHeight =  scrollbar.height;
         }
-        return Math.max(20, sliderHeight)
+        return Math.max(20, sliderHeight);
     }
 
     function recalcSlider(){
