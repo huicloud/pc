@@ -30,7 +30,7 @@ Window {
     id: dialog
     width: 300
     height: 200
-    flags:Qt.Dialog | Qt.FramelessWindowHint | Qt.WindowSystemMenuHint
+    flags: Qt.Window  | Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint | Qt.WindowSystemMenuHint
     modality: Qt.WindowModal
 
     default property alias customItem: content.data

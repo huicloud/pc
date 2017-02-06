@@ -37,7 +37,7 @@ Window {
     id: root
     width: 500
     height: 304
-    flags:Qt.Dialog | Qt.FramelessWindowHint | Qt.WindowSystemMenuHint
+    flags: Qt.Window  | Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint | Qt.WindowSystemMenuHint
     modality: Qt.WindowModal
     title: '快捷委托设置'
     property var theme: ThemeManager.currentTheme

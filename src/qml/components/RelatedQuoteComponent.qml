@@ -194,7 +194,9 @@ ContextComponent {
         var hasJiJinLeiXing = false;
 
         if (data && data[0].JieGuo) {
-            data[0].JieGuo.forEach(function(dataList){
+
+            if (data[0].JieGuo.length > 0){
+                data[0].JieGuo.forEach(function(dataList){
                 if (dataList){
                     if (dataList.LeiXing === 8){
                         //板块
@@ -224,7 +226,10 @@ ContextComponent {
                         }
                     }
                 }
-            });
+                });
+            }else{
+               processEmpetyData();
+            }
 
             //进行数据订阅
             if (plankStockList.length > 0){
@@ -238,7 +243,10 @@ ContextComponent {
                 fundDataProvider.autoQuery = true;
                 fundDataProvider.query();
             }
+        }else{
+            processEmpetyData();
         }
+
         root.hasFundData = hasJiJinLeiXing;
     }
 
@@ -339,6 +347,13 @@ ContextComponent {
         onError: {
             fundTable.model = [];
         }
+    }
+
+    function processEmpetyData(){
+        fundTable.model = [];
+        plankTable.model = [];
+        fundDataProvider.cancel();
+        plankDataProvider.cancel();
     }
 
     function sortFundData(datas){

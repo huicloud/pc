@@ -285,7 +285,6 @@ MainWindow {
         miniTitlebar: true
         showButton: true
         confirmType: 2
-        flags: Qt.Window  | Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint | Qt.WindowSystemMenuHint
         title: '提示'
         width: 200
         height: 120
